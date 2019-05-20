@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="education_university.degree <= 0.0\ngini = 0.5\nsamples = 22671\nvalue = [18087, 17723]"] ;
+1 [label="emp.var.rate <= -0.3\ngini = 0.5\nsamples = 13262\nvalue = [12958, 8015]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="cons.conf.idx <= -46.2\ngini = 0.5\nsamples = 5571\nvalue = [3450, 5312]"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 3168\nvalue = [2766, 2225]"] ;
+2 -> 3 ;
+4 [label="gini = 0.3\nsamples = 2403\nvalue = [684, 3087]"] ;
+2 -> 4 ;
+5 [label="month_oct <= 0.0\ngini = 0.3\nsamples = 7691\nvalue = [9508, 2703]"] ;
+1 -> 5 ;
+6 [label="gini = 0.3\nsamples = 7608\nvalue = [9502, 2587]"] ;
+5 -> 6 ;
+7 [label="gini = 0.1\nsamples = 83\nvalue = [6, 116]"] ;
+5 -> 7 ;
+8 [label="cons.conf.idx <= -36.1\ngini = 0.5\nsamples = 9409\nvalue = [5129, 9708]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="cons.conf.idx <= -36.4\ngini = 0.5\nsamples = 7731\nvalue = [4818, 7361]"] ;
+8 -> 9 ;
+10 [label="gini = 0.4\nsamples = 6113\nvalue = [2930, 6642]"] ;
+9 -> 10 ;
+11 [label="gini = 0.4\nsamples = 1618\nvalue = [1888, 719]"] ;
+9 -> 11 ;
+12 [label="day_of_week_wed <= 1.0\ngini = 0.2\nsamples = 1678\nvalue = [311, 2347]"] ;
+8 -> 12 ;
+13 [label="gini = 0.2\nsamples = 1578\nvalue = [236, 2270]"] ;
+12 -> 13 ;
+14 [label="gini = 0.5\nsamples = 100\nvalue = [75, 77]"] ;
+12 -> 14 ;
+}
